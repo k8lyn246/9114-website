@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donations | FRC 9114 Rotationaries</title>
+  <title>Our Mission | FRC 9114 Rotationaries</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="mission.html">Our Mission</a></li>
+          <li><a href="mission.html" class="current">Our Mission</a></li>
           <li><a href="team.html">Our Team</a></li>
           <li><a href="https://www.gofundme.com/f/get-9114-rotationaries-to-worlds" target="_blank" rel="noopener noreferrer">Donations</a></li>
           <li><a href="sponsor.html">Sponsor Us</a></li>
@@ -34,23 +34,67 @@
     </div>
   </header>
 
-  <main>
-    <div class="container">
-      <h1 class="page-title">Donations</h1>
-      <p>Your support helps us buy parts, travel to competitions, and keep our program running. Every contribution makes a difference for our students and our robot.</p>
-      <p>Add a short paragraph here about the impact of donations (e.g. scholarships, equipment, competition fees).</p>
+  <main class="mission-main">
+    <header class="mission-header">
+      <h1 class="section-hero-title scroll-reveal">Our Mission</h1>
+      <p class="section-subtitle scroll-reveal scroll-reveal--delay-1">Rotationaries Foundation · 501(c)(3)</p>
+    </header>
 
-      <h2 class="section-title">Ways to Give</h2>
-      <ul class="tier-list">
-        <li><strong>Friend of the Team</strong> — One-time or recurring gift. Every amount helps.</li>
-        <li><strong>Add another tier</strong> — Describe recognition or benefits if you offer them.</li>
-      </ul>
+    <section class="mission-statement">
+      <div class="mission-statement__inner scroll-reveal">
+        <p class="mission-statement__text">
+          Rotationaries Foundation is a youth-serving 501(c)(3) educational nonprofit that supports FRC Team 9114 Rotationaries and related STEM programs in Fremont, CA. We provide hands-on robotics education, competition opportunities, mentorship, and community outreach that develop the next generation of engineers, innovators, and leaders.
+        </p>
+      </div>
+    </section>
 
-      <p class="mt-xl">
-        <a href="contact.html" class="btn btn-primary">Contact us to donate</a>
-      </p>
-      <p>You can also add a link to PayPal, GoFundMe, or your school’s donation page above when ready.</p>
-    </div>
+    <section class="mission-pillars">
+      <div class="mission-pillars__inner">
+        <article class="mission-pillar scroll-reveal">
+          <span class="mission-pillar__num">01</span>
+          <h2 class="mission-pillar__title">Robotics Education</h2>
+          <p>Students design, build, and program competition robots through FIRST Robotics, learning engineering, collaboration, and problem-solving in a hands-on environment.</p>
+        </article>
+        <article class="mission-pillar scroll-reveal scroll-reveal--delay-1">
+          <span class="mission-pillar__num">02</span>
+          <h2 class="mission-pillar__title">Mentorship &amp; Leadership</h2>
+          <p>We give students real ownership of technical and operational roles so they grow into confident leaders who can teach, organize, and inspire others.</p>
+        </article>
+        <article class="mission-pillar scroll-reveal scroll-reveal--delay-2">
+          <span class="mission-pillar__num">03</span>
+          <h2 class="mission-pillar__title">Community Outreach</h2>
+          <p>We share STEM with our community through events, partnerships, and outreach that make robotics and engineering more accessible for everyone.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="mission-org" aria-label="Organization details">
+      <div class="mission-org__inner">
+        <h2 class="section-subtitle scroll-reveal">Organization Details</h2>
+        <div class="mission-org__grid">
+          <div class="mission-org__card scroll-reveal">
+            <p class="mission-org__label">Organization</p>
+            <p class="mission-org__value">Rotationaries Foundation</p>
+          </div>
+          <div class="mission-org__card scroll-reveal scroll-reveal--delay-1">
+            <p class="mission-org__label">Status</p>
+            <p class="mission-org__value">501(c)(3) Nonprofit</p>
+          </div>
+          <div class="mission-org__card scroll-reveal scroll-reveal--delay-1">
+            <p class="mission-org__label">EIN / Charity ID</p>
+            <p class="mission-org__value">33-3134149</p>
+          </div>
+          <div class="mission-org__card scroll-reveal">
+            <p class="mission-org__label">Address</p>
+            <p class="mission-org__value">3510 Campbell Ct<br>Fremont, CA 94536-3613</p>
+          </div>
+          <div class="mission-org__card scroll-reveal scroll-reveal--delay-1">
+            <p class="mission-org__label">Email</p>
+            <p class="mission-org__value"><a href="mailto:rotationaries@gmail.com">rotationaries@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
