@@ -1,0 +1,293 @@
+# Pages CMS configuration for FRC 9114 Rotationaries
+# Open https://app.pagescms.org and sign in with GitHub to manage website images
+# without needing any OAuth server or database.
+
+media:
+  - name: images
+    label: Website Images
+    input: images
+    output: /images
+
+content:
+  - name: branding
+    label: Site Logo & Branding
+    type: file
+    path: data/branding.json
+    format: json
+    fields:
+      - name: logoImage
+        label: Header Logo
+        type: image
+        options:
+          media: images
+      - name: logoAlt
+        label: Logo Alt Text
+        type: string
+
+  - name: home
+    label: Home Page (Slideshow & Accomplishments)
+    type: file
+    path: data/home.json
+    format: json
+    fields:
+      - name: heroSlides
+        label: Hero Slideshow Photos
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{alt}"
+        fields:
+          - name: image
+            label: Slide Image
+            type: image
+            required: true
+            options:
+              media: images
+          - name: alt
+            label: Description (Alt Text)
+            type: string
+            required: true
+          - name: position
+            label: Crop Position
+            type: select
+            default: "center center"
+            options:
+              values:
+                - { value: "center center", label: "Center" }
+                - { value: "center top", label: "Top" }
+                - { value: "center bottom", label: "Bottom" }
+                - { value: "center 25%", label: "Upper Third" }
+                - { value: "center 75%", label: "Lower Third" }
+      - name: accomplishments
+        label: Accomplishments Carousel
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{year} — {label}"
+        fields:
+          - name: year
+            label: Year
+            type: string
+            required: true
+          - name: label
+            label: Award / Milestone
+            type: string
+            required: true
+          - name: theme
+            label: Card Color Theme
+            type: select
+            default: "maroon"
+            options:
+              values:
+                - { value: "maroon", label: "Maroon" }
+                - { value: "light", label: "Light" }
+                - { value: "wine", label: "Wine" }
+                - { value: "rose", label: "Rose" }
+                - { value: "blush", label: "Blush" }
+          - name: image
+            label: Photo
+            type: image
+            required: true
+            options:
+              media: images
+          - name: alt
+            label: Description (Alt Text)
+            type: string
+
+  - name: about
+    label: About Page (Divisions)
+    type: file
+    path: data/about.json
+    format: json
+    fields:
+      - name: designImage
+        label: "01 Design — Photo"
+        type: image
+        options:
+          media: images
+      - name: designAlt
+        label: "01 Design — Alt Text"
+        type: string
+      - name: mechanicalImage
+        label: "02 Mechanical — Photo"
+        type: image
+        options:
+          media: images
+      - name: mechanicalAlt
+        label: "02 Mechanical — Alt Text"
+        type: string
+      - name: electricalImage
+        label: "03 Electrical — Photo"
+        type: image
+        options:
+          media: images
+      - name: electricalAlt
+        label: "03 Electrical — Alt Text"
+        type: string
+      - name: softwareImage
+        label: "04 Software — Photo"
+        type: image
+        options:
+          media: images
+      - name: softwareAlt
+        label: "04 Software — Alt Text"
+        type: string
+      - name: outreachImage
+        label: "05 Outreach — Photo"
+        type: image
+        options:
+          media: images
+      - name: outreachAlt
+        label: "05 Outreach — Alt Text"
+        type: string
+
+  - name: sponsor
+    label: Sponsor Page
+    type: file
+    path: data/sponsor.json
+    format: json
+    fields:
+      - name: logosImage
+        label: Sponsor Logos Banner
+        type: image
+        options:
+          media: images
+      - name: logosAlt
+        label: Alt Text
+        type: string
+
+  - name: team
+    label: Team Page (Member Photos)
+    type: file
+    path: data/team.json
+    format: json
+    fields:
+      - name: leaders
+        label: 2026–2027 Leaders
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name} — {role}"
+        fields:
+          - name: name
+            label: Full Name
+            type: string
+            required: true
+          - name: role
+            label: Leadership Role
+            type: string
+            required: true
+          - name: image
+            label: Portrait Photo
+            type: image
+            options:
+              media: images
+          - name: photoPosition
+            label: Photo Framing (optional, e.g. center 26%)
+            type: string
+          - name: photoZoom
+            label: Photo Zoom (default 1)
+            type: number
+            default: 1
+      - name: hardware
+        label: Hardware Members
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: name
+            label: Full Name
+            type: string
+            required: true
+          - name: image
+            label: Portrait Photo
+            type: image
+            options:
+              media: images
+          - name: photoPosition
+            label: Photo Framing (optional, e.g. center 32%)
+            type: string
+          - name: photoZoom
+            label: Photo Zoom (default 1)
+            type: number
+            default: 1
+      - name: software
+        label: Software Members
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: name
+            label: Full Name
+            type: string
+            required: true
+          - name: image
+            label: Portrait Photo
+            type: image
+            options:
+              media: images
+          - name: photoPosition
+            label: Photo Framing (optional)
+            type: string
+          - name: photoZoom
+            label: Photo Zoom (default 1)
+            type: number
+            default: 1
+      - name: outreach
+        label: Outreach Members
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: name
+            label: Full Name
+            type: string
+            required: true
+          - name: image
+            label: Portrait Photo
+            type: image
+            options:
+              media: images
+          - name: photoPosition
+            label: Photo Framing (optional)
+            type: string
+          - name: photoZoom
+            label: Photo Zoom (default 1)
+            type: number
+            default: 1
+      - name: mentors
+        label: Mentors
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: name
+            label: Full Name
+            type: string
+            required: true
+          - name: role
+            label: Role / Specialty (optional)
+            type: string
+          - name: image
+            label: Portrait Photo
+            type: image
+            options:
+              media: images
+          - name: photoPosition
+            label: Photo Framing (optional)
+            type: string
+          - name: photoZoom
+            label: Photo Zoom (default 1)
+            type: number
+            default: 1

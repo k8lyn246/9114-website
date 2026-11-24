@@ -1,0 +1,257 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+# Sveltia CMS configuration for FRC 9114 Rotationaries
+# See CMS_SETUP.md for one-time GitHub repo & login setup.
+
+backend:
+  name: github
+  # Replace with your actual GitHub repository ("owner/repo"), e.g. FRC9114/9114-website
+  repo: YOUR_GITHUB_OWNER/YOUR_REPO_NAME
+  # Switch to "main" after merging the beta branch into main
+  branch: beta
+  # Optional: uncomment and point to your sveltia-cms-auth Cloudflare Worker
+  # for one-click "Sign in with GitHub" OAuth. Leave omitted to sign in with
+  # a GitHub Personal Access Token (PAT) or Local Repository mode.
+  # base_url: https://your-sveltia-cms-auth.workers.dev
+
+media_folder: "images"
+public_folder: "/images"
+
+site_url: "https://www.frc9114rotationaries.org"
+display_url: "https://www.frc9114rotationaries.org"
+
+collections:
+  - name: site_images
+    label: Website Images
+    files:
+      - name: branding
+        label: Site Logo & Branding
+        file: data/branding.json
+        fields:
+          - name: logoImage
+            label: Header Logo
+            widget: image
+          - name: logoAlt
+            label: Logo Alt Text
+            widget: string
+            required: false
+
+      - name: home
+        label: Home Page
+        file: data/home.json
+        fields:
+          - name: heroSlides
+            label: Hero Slideshow Photos
+            widget: list
+            summary: "{{fields.alt}}"
+            fields:
+              - name: image
+                label: Slide Image
+                widget: image
+              - name: alt
+                label: Description (Alt Text)
+                widget: string
+              - name: position
+                label: Crop Position (CSS object-position)
+                widget: select
+                default: "center center"
+                options:
+                  - { label: "Center", value: "center center" }
+                  - { label: "Top", value: "center top" }
+                  - { label: "Bottom", value: "center bottom" }
+                  - { label: "Upper Third", value: "center 25%" }
+                  - { label: "Lower Third", value: "center 75%" }
+          - name: accomplishments
+            label: Accomplishments Carousel
+            widget: list
+            summary: "{{fields.year}} — {{fields.label}}"
+            fields:
+              - name: year
+                label: Year
+                widget: string
+              - name: label
+                label: Award / Milestone
+                widget: string
+              - name: theme
+                label: Card Color Theme
+                widget: select
+                default: "maroon"
+                options:
+                  - { label: "Maroon", value: "maroon" }
+                  - { label: "Light", value: "light" }
+                  - { label: "Wine", value: "wine" }
+                  - { label: "Rose", value: "rose" }
+                  - { label: "Blush", value: "blush" }
+              - name: image
+                label: Photo
+                widget: image
+              - name: alt
+                label: Description (Alt Text)
+                widget: string
+
+      - name: about
+        label: About Page (Divisions)
+        file: data/about.json
+        fields:
+          - name: designImage
+            label: "01 Design — Photo"
+            widget: image
+          - name: designAlt
+            label: "01 Design — Alt Text"
+            widget: string
+          - name: mechanicalImage
+            label: "02 Mechanical — Photo"
+            widget: image
+          - name: mechanicalAlt
+            label: "02 Mechanical — Alt Text"
+            widget: string
+          - name: electricalImage
+            label: "03 Electrical — Photo"
+            widget: image
+          - name: electricalAlt
+            label: "03 Electrical — Alt Text"
+            widget: string
+          - name: softwareImage
+            label: "04 Software — Photo"
+            widget: image
+          - name: softwareAlt
+            label: "04 Software — Alt Text"
+            widget: string
+          - name: outreachImage
+            label: "05 Outreach — Photo"
+            widget: image
+          - name: outreachAlt
+            label: "05 Outreach — Alt Text"
+            widget: string
+
+      - name: sponsor
+        label: Sponsor Page
+        file: data/sponsor.json
+        fields:
+          - name: logosImage
+            label: Sponsor Logos Banner
+            widget: image
+          - name: logosAlt
+            label: Alt Text
+            widget: string
+
+      - name: team
+        label: Team Page (Member Photos)
+        file: data/team.json
+        fields:
+          - name: leaders
+            label: 2026–2027 Leaders
+            widget: list
+            summary: "{{fields.name}} — {{fields.role}}"
+            fields:
+              - name: name
+                label: Full Name
+                widget: string
+              - name: role
+                label: Leadership Role
+                widget: string
+              - name: image
+                label: Portrait Photo
+                widget: image
+                required: false
+              - name: photoPosition
+                label: Photo Framing (optional, e.g. "center 26%")
+                widget: string
+                required: false
+              - name: photoZoom
+                label: Photo Zoom (default 1)
+                widget: number
+                value_type: float
+                default: 1
+                required: false
+          - name: hardware
+            label: Hardware Members
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - name: name
+                label: Full Name
+                widget: string
+              - name: image
+                label: Portrait Photo
+                widget: image
+                required: false
+              - name: photoPosition
+                label: Photo Framing (optional, e.g. "center 32%")
+                widget: string
+                required: false
+              - name: photoZoom
+                label: Photo Zoom (default 1)
+                widget: number
+                value_type: float
+                default: 1
+                required: false
+          - name: software
+            label: Software Members
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - name: name
+                label: Full Name
+                widget: string
+              - name: image
+                label: Portrait Photo
+                widget: image
+                required: false
+              - name: photoPosition
+                label: Photo Framing (optional)
+                widget: string
+                required: false
+              - name: photoZoom
+                label: Photo Zoom (default 1)
+                widget: number
+                value_type: float
+                default: 1
+                required: false
+          - name: outreach
+            label: Outreach Members
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - name: name
+                label: Full Name
+                widget: string
+              - name: image
+                label: Portrait Photo
+                widget: image
+                required: false
+              - name: photoPosition
+                label: Photo Framing (optional)
+                widget: string
+                required: false
+              - name: photoZoom
+                label: Photo Zoom (default 1)
+                widget: number
+                value_type: float
+                default: 1
+                required: false
+          - name: mentors
+            label: Mentors
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - name: name
+                label: Full Name
+                widget: string
+              - name: role
+                label: Role / Specialty (optional)
+                widget: string
+                required: false
+              - name: image
+                label: Portrait Photo
+                widget: image
+                required: false
+              - name: photoPosition
+                label: Photo Framing (optional)
+                widget: string
+                required: false
+              - name: photoZoom
+                label: Photo Zoom (default 1)
+                widget: number
+                value_type: float
+                default: 1
+                required: false

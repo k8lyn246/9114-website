@@ -1,0 +1,151 @@
+{
+  "leaders": [
+    {
+      "name": "Shahina Shaik",
+      "role": "Team Captain",
+      "image": "/images/shahina.png",
+      "photoPosition": "center 26%",
+      "photoZoom": 1.08
+    },
+    {
+      "name": "Rohan Saravanan",
+      "role": "Technical and Operations Vice President",
+      "image": "",
+      "photoPosition": "",
+      "photoZoom": 1
+    },
+    {
+      "name": "Katelyn Deng",
+      "role": "Finance and Operations Vice President",
+      "image": "/images/katelyn.png",
+      "photoPosition": "center 49%",
+      "photoZoom": 1
+    },
+    {
+      "name": "Rishaan Jain",
+      "role": "Software Lead",
+      "image": "/images/rishaan.webp",
+      "photoPosition": "",
+      "photoZoom": 1
+    },
+    {
+      "name": "Aiden Tsang",
+      "role": "Hardware Lead",
+      "image": "/images/aiden.png",
+      "photoPosition": "",
+      "photoZoom": 1
+    },
+    {
+      "name": "Aadi Mann",
+      "role": "Manufacturing Lead",
+      "image": "/images/aadi.png",
+      "photoPosition": "",
+      "photoZoom": 1
+    },
+    {
+      "name": "Sricharan Muralidaran",
+      "role": "Mechanical Design Lead",
+      "image": "/images/sri.png",
+      "photoPosition": "",
+      "photoZoom": 1
+    },
+    {
+      "name": "Meenakshi Sujith",
+      "role": "Outreach Lead",
+      "image": "/images/Meenakshi_final.JPG",
+      "photoPosition": "",
+      "photoZoom": 1
+    }
+  ],
+  "hardware": [
+    {
+      "name": "Andy Gao",
+      "image": "/images/andy.png",
+      "photoPosition": "",
+      "photoZoom": 1
+    },
+    {
+      "name": "Ameya Srinivasan",
+      "image": "/images/ameya.png",
+      "photoPosition": "",
+      "photoZoom": 1
+    },
+    {
+      "name": "Vebhav Thilak",
+      "image": "/images/vebhav.png",
+      "photoPosition": "center 32%",
+      "photoZoom": 1
+    },
+    {
+      "name": "Jocelyn Thio",
+      "image": "",
+      "photoPosition": "",
+      "photoZoom": 1
+    },
+    {
+      "name": "Arjav Mullick",
+      "image": "/images/arjav.png",
+      "photoPosition": "",
+      "photoZoom": 1
+    },
+    {
+      "name": "Delbert Zeng",
+      "image": "",
+      "photoPosition": "",
+      "photoZoom": 1
+    },
+    {
+      "name": "Nityasree Siva Gurusamy",
+      "image": "/images/nitya.png",
+      "photoPosition": "",
+      "photoZoom": 1
+    },
+    {
+      "name": "Vedansh Mamashetty",
+      "image": "",
+      "photoPosition": "",
+      "photoZoom": 1
+    },
+    {
+      "name": "Meera Sukumaran",
+      "image": "/images/meera.png",
+      "photoPosition": "",
+      "photoZoom": 1
+    },
+    {
+      "name": "Raghav Srinath",
+      "image": "/images/raghav.png",
+      "photoPosition": "center 32%",
+      "photoZoom": 1
+    }
+  ],
+  "software": [
+    {
+      "name": "Yuvraj Dar",
+      "image": "/images/yuvi.png",
+      "photoPosition": "",
+      "photoZoom": 1
+    },
+    {
+      "name": "Justin Gu",
+      "image": "",
+      "photoPosition": "",
+      "photoZoom": 1
+    },
+    {
+      "name": "Jason Li",
+      "image": "/images/jason.png",
+      "photoPosition": "",
+      "photoZoom": 1
+    }
+  ],
+  "outreach": [
+    {
+      "name": "May Rui",
+      "image": "",
+      "photoPosition": "",
+      "photoZoom": 1
+    }
+  ],
+  "mentors": []
+}

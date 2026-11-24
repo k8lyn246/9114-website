@@ -1,0 +1,12 @@
+{
+  "designImage": "/images/3_home.jpg",
+  "designAlt": "Rotationaries design team at work",
+  "mechanicalImage": "/images/4_home.jpg",
+  "mechanicalAlt": "Rotationaries mechanical team building the robot",
+  "electricalImage": "/images/1_home.jpg",
+  "electricalAlt": "Rotationaries electrical team at work",
+  "softwareImage": "/images/5_home.jpg",
+  "softwareAlt": "Rotationaries software team at work",
+  "outreachImage": "/images/2_home.jpg",
+  "outreachAlt": "Rotationaries outreach at a community event"
+}

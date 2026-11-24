@@ -1,0 +1,78 @@
+{
+  "heroSlides": [
+    {
+      "image": "/images/robot picture.jpg",
+      "alt": "Rotationaries robot",
+      "position": "center bottom"
+    },
+    {
+      "image": "/images/team_sunset.jpg",
+      "alt": "Rotationaries team at sunset",
+      "position": "center center"
+    },
+    {
+      "image": "/images/contra_costa_team.jpg",
+      "alt": "Rotationaries at Contra Costa",
+      "position": "center center"
+    },
+    {
+      "image": "/images/9114 signs_edited.jpg",
+      "alt": "FRC 9114 team signs",
+      "position": "center center"
+    },
+    {
+      "image": "/images/team_hike.webp",
+      "alt": "Rotationaries team hike",
+      "position": "center center"
+    },
+    {
+      "image": "/images/team_potluck.webp",
+      "alt": "Rotationaries team potluck",
+      "position": "center center"
+    }
+  ],
+  "accomplishments": [
+    {
+      "year": "2023",
+      "label": "Rookie Inspiration Award",
+      "theme": "maroon",
+      "image": "/images/2023.jpg",
+      "alt": "2023 Rookie Inspiration Award"
+    },
+    {
+      "year": "2024",
+      "label": "Semifinalists @ Idaho Regional",
+      "theme": "light",
+      "image": "/images/2024_first.jpg",
+      "alt": "2024 Semifinalists at Idaho Regional"
+    },
+    {
+      "year": "2024",
+      "label": "2x Alliance Captain",
+      "theme": "wine",
+      "image": "/images/2024_second.jpg",
+      "alt": "2024 2x Alliance Captain"
+    },
+    {
+      "year": "2024",
+      "label": "Innovation in Control Award",
+      "theme": "rose",
+      "image": "/images/2024_third.jpg",
+      "alt": "2024 Innovation in Control Award"
+    },
+    {
+      "year": "2025",
+      "label": "Backup Alliance @ Pinnacles Regional",
+      "theme": "maroon",
+      "image": "/images/2025.jpg",
+      "alt": "2025 Backup Alliance at Pinnacles Regional"
+    },
+    {
+      "year": "2026",
+      "label": "Rising All-Star Award @ Contra Costa District",
+      "theme": "blush",
+      "image": "/images/2026.webp",
+      "alt": "2026 Rising All-Star Award at Contra Costa District"
+    }
+  ]
+}
