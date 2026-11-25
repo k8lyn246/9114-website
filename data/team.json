@@ -24,7 +24,7 @@
     {
       "name": "Rishaan Jain",
       "role": "Software Lead",
-      "image": "/images/rishaan.webp",
+      "image": "/images/robot picture.jpg",
       "photoPosition": "",
       "photoZoom": 1
     },
@@ -147,5 +147,13 @@
       "photoZoom": 1
     }
   ],
-  "mentors": []
+  "mentors": [
+    {
+      "name": "murlee",
+      "role": "Mentor",
+      "image": "/images/2024_first.jpg",
+      "photoPosition": "",
+      "photoZoom": 1
+    }
+  ]
 }
